@@ -1,0 +1,7 @@
+${AnsiColor.RED}
+_____ _____ _____ _____ _____ __    __    _____
+|  |  |     | __  | __  |   __|  |  |  |  |  _  |
+|  |  | | | | __ -|    -|   __|  |__|  |__|     |
+|_____|_|_|_|_____|__|__|_____|_____|_____|__|__|
+Application Version: ${application.version}
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}

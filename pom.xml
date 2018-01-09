@@ -6,11 +6,19 @@
 
     <groupId>com.umbrella</groupId>
     <artifactId>veronica</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <description>
         根项目,管理其他子项目
     </description>
+    <modules>
+        <module>seed-resource</module>
+        <module>seed-web</module>
+        <module>seed-config</module>
+        <module>seed-service</module>
+        <module>seed-mapper</module>
+    </modules>
 
     <properties>
         <java.version>1.7</java.version>
@@ -47,6 +55,18 @@
             <artifactId>spring-boot-starter-security</artifactId>
             <version>${spring.boot.version}</version>
         </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-freemarker -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
