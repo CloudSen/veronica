@@ -1,9 +1,8 @@
-package com.umbrella.controller.testController;
+package com.umbrella.controller.testcontroller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 /**
  * <p>
@@ -23,10 +22,5 @@ public class TestController {
         map.addAttribute("name", "cloudsen");
         map.addAttribute("bookTitle", "spring boot");
         return "welcome";
-    }
-
-    @RequestMapping("/index")
-    public String test2() {
-        return "index";
     }
 }

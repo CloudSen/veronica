@@ -2,6 +2,7 @@ package com.umbrella.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
@@ -13,11 +14,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  * @date: 2018-01-09
  * @version: 1.0
  */
-
+@Configuration
 public class MvcConfig extends WebMvcConfigurerAdapter {
     @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/views/**");
-        super.addResourceHandlers(registry);
+    public void addViewControllers(ViewControllerRegistry registry) {
+        super.addViewControllers(registry);
+        registry.addViewController("/index").setViewName("index");
+        registry.addViewController("/login-error").setViewName("login-error");
+        registry.addViewController("/login").setViewName("login");
     }
 }
