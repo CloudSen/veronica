@@ -19,6 +19,7 @@
         <module>seed-service</module>
         <module>seed-mapper</module>
         <module>seed-model</module>
+        <module>seed-note</module>
     </modules>
 
     <properties>
