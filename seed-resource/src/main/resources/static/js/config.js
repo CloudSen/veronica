@@ -3,7 +3,7 @@
     require.config({
         baseUrl: "/js/",
         paths: {
-            "jquery": "jQuery/jquery-3.2.1.min",
+            "jquery": ["http://libs.baidu.com/jquery/2.0.3/jquery","jQuery/jquery-3.2.1.min"],
             "test4": "test/test4",
             "test5": "test/test5",
             "test6": "test/test6"
