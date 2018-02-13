@@ -1,14 +1,20 @@
 package com.umbrella.config;
 
 import net.gplatform.spring.social.weibo.connect.WeiboConnectionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
+import org.springframework.security.crypto.encrypt.Encryptors;
 import org.springframework.social.UserIdSource;
 import org.springframework.social.config.annotation.ConnectionFactoryConfigurer;
 import org.springframework.social.config.annotation.EnableSocial;
 import org.springframework.social.config.annotation.SocialConfigurer;
 import org.springframework.social.connect.ConnectionFactoryLocator;
 import org.springframework.social.connect.UsersConnectionRepository;
+import org.springframework.social.connect.jdbc.JdbcUsersConnectionRepository;
+import org.springframework.social.security.AuthenticationNameUserIdSource;
+
+import javax.sql.DataSource;
 
 /**
  * Spring Social 配置类
@@ -22,6 +28,14 @@ import org.springframework.social.connect.UsersConnectionRepository;
 @Configuration
 @EnableSocial
 public class SocialConfig implements SocialConfigurer {
+
+    private DataSource dataSource;
+
+    @Autowired
+    public SocialConfig (DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
+
     @Override
     public void addConnectionFactories(ConnectionFactoryConfigurer cfConfigurer, Environment environment) {
         cfConfigurer.addConnectionFactory(new WeiboConnectionFactory(
@@ -32,11 +46,13 @@ public class SocialConfig implements SocialConfigurer {
 
     @Override
     public UserIdSource getUserIdSource() {
-        return null;
+        return new AuthenticationNameUserIdSource();
     }
 
     @Override
     public UsersConnectionRepository getUsersConnectionRepository(ConnectionFactoryLocator connectionFactoryLocator) {
-        return null;
+        return new JdbcUsersConnectionRepository(dataSource,
+                connectionFactoryLocator,
+                Encryptors.noOpText());
     }
 }

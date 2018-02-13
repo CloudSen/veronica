@@ -15,16 +15,16 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
  * @date 2018-02-11
  */
 public class TestWebSocketHandler extends TextWebSocketHandler {
-    
+
     private static final Logger logger = LoggerFactory.getLogger(TestWebSocketHandler.class);
-    
+
     @Override
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
         logger.info("socket 连接已建立");
         logger.info("sessionId:" + session.getId()
                 + ",localAddr:" + session.getLocalAddress()
-                 + ",remoteAddr:" + session.getRemoteAddress()
-                 + ",url:" + session.getUri()
+                + ",remoteAddr:" + session.getRemoteAddress()
+                + ",url:" + session.getUri()
         );
     }
 
