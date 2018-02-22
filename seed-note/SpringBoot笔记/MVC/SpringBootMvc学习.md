@@ -91,4 +91,13 @@ Spring Boot默认从classpath里读取以下几个路径中的静态资源，这
     ```text
     spring.resources.static-locations = classpath:/test, classpath:/test2
     ```
-    
+## 模板引擎
+> Spring MVC支持多种模板引擎用于生成动态html内容  
+
+Spring Boot支持以下模板的自动化配置：
+- FreeMarker
+- Groovy
+- Thymeleaf
+- Mustache  
+
+Spring Boot默认自动到以下路径寻找模板：`src/main/resources/templates`

@@ -10,14 +10,13 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 import org.springframework.web.socket.server.standard.ServletServerContainerFactoryBean;
 
 /**
- * WebSocket配置类
+ * WebSocket配置类，基于Spring WebSocket Api
  *
  * @author 011096=>yangyunsen@inner.czy.com
  * @version 1.0
  * @date 2018-02-11
  */
-@Configuration
-@EnableWebSocket
+
 public class WebSocketConfig implements WebSocketConfigurer {
     /**
      * 将java配置的handler 与 url 映射起来，并能添加拦截器
@@ -29,8 +28,8 @@ public class WebSocketConfig implements WebSocketConfigurer {
      */
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
-        registry.addHandler(testHandler(), "/testSocket/test")
-                .addInterceptors(testInterception());
+       /* registry.addHandler(testHandler(), "/websocket")
+                .addInterceptors(testInterception());*/
     }
 
     /**

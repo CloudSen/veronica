@@ -1,5 +1,6 @@
 package com.umbrella.interceptor;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.server.ServerHttpRequest;
@@ -36,13 +37,7 @@ public class TestWebSocketInterception implements HandshakeInterceptor {
                                    ServerHttpResponse serverHttpResponse,
                                    WebSocketHandler webSocketHandler,
                                    Map<String, Object> map) throws Exception {
-        HttpSession httpSession = this.getSession(serverHttpRequest);
-        if (httpSession != null) {
-            map.put("sessionId",httpSession.getId());
-            logger.info("socket握手拦截器启动，握手前:");
-            logger.info("sessionId:" + httpSession.getId()  + "," + httpSession.getAttributeNames().toString());
-        }
-        logger.info("socket握手拦截器启动，握手前: session == null");
+        logger.info("socket握手拦截器启动，握手前");
         return true;
     }
 
@@ -52,6 +47,7 @@ public class TestWebSocketInterception implements HandshakeInterceptor {
                                WebSocketHandler webSocketHandler,
                                Exception e) {
 
+        logger.info("socket握手拦截器启动，握手后");
     }
 
     /**
