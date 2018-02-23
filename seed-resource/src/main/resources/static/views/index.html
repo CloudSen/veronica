@@ -6,57 +6,5 @@
 </head>
 <body>
 one more time .
-<input type="text" id="text" placeholder=""/>
-<button type="button" onclick="sendMessage();">发送socket消息</button>
-<button type="button" onclick="closeWebSocket();">关闭socket连接</button>
-<div id="content">
-    <p>消息监控</p>
-</div>
 </body>
-<script type="text/javascript" src="/js/jQuery/jquery-3.2.1.min.js"></script>
-<script type="text/javascript">
-    var websocket = null;
-    //判断当前浏览器是否支持WebSocket
-    if ('WebSocket' in window) {
-        websocket = new WebSocket("ws://localhost:7001/websocket");
-    } else {
-        var $p = $("<p>当前浏览器不支持 websocket</p>");
-        $p.appendTo($("#content"));
-    }
-    websocket.onopen = function (ev) {
-        var $p = $("<p>socket连接建立</p>");
-        $p.appendTo($("#content"));
-    };
-    websocket.onclose = function (ev) {
-        var $p = $("<p>socket连接关闭</p>");
-        $p.appendTo($("#content"));
-    };
-    websocket.onmessage = function (ev) {
-        var $p = $("<p>"+ ev.data +"</p>");
-        $p.appendTo($("#content"));
-    };
-    websocket.onerror = function (ev) {
-        var $p = $("<p>websocket发生错误</p>");
-        $p.appendTo($("#content"));
-    };
-    window.onbeforeunload = function (ev) {
-        closeWebSocket();
-    };
-
-    function closeWebSocket() {
-        if (websocket !== null) {
-            websocket.close();
-        } else {
-            alert("连接为空");
-        }
-    }
-
-    function sendMessage() {
-        if (websocket === null) {
-            alert("连接为空");
-        } else {
-            websocket.send($("#text").val());
-        }
-    }
-</script>
 </html>

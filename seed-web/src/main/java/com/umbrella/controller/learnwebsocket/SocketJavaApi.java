@@ -1,4 +1,4 @@
-package com.umbrella.controller.sockettest;
+package com.umbrella.controller.learnwebsocket;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,10 +14,10 @@ import javax.websocket.server.ServerEndpoint;
  * @date 2018-02-22
  */
 @ServerEndpoint(value = "/websocket")
-public class SocketTest {
+public class SocketJavaApi {
 
     private Session session;
-    private static final Logger logger = LoggerFactory.getLogger(SocketTest.class);
+    private static final Logger logger = LoggerFactory.getLogger(SocketJavaApi.class);
 
     @OnOpen
     public void onOpen(Session session) {

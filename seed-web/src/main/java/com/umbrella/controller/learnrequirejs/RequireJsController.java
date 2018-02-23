@@ -1,4 +1,4 @@
-package com.umbrella.controller;
+package com.umbrella.controller.learnrequirejs;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,11 +15,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class RequireJsController {
     @RequestMapping("/normal")
     public String loadJs(){
-        return "normalLoadJs";
+        return "learnrequirejs/normalLoadJs";
     }
 
     @RequestMapping("/require")
     public String requireJs(){
-        return "requireLoadJs";
+        return "learnrequirejs/requireLoadJs";
     }
 }

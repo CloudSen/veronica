@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatRoom</title>
+</head>
+<script type="text/javascript"
+        src="/js/require/require-2.3.5.js"
+        defer async="true" data-main="/js/config"></script>
+<body>
+<input type="text" id="text" placeholder=""/>
+<button type="button" onclick="sendMessage();">发送消息</button>
+<button type="button" onclick="closeWebSocket();">关闭连接</button>
+<button type="button" onclick="reconnection();">重新连接</button>
+<div id="content">
+    <p>消息监控</p>
+</div>
+</body>
+</html>

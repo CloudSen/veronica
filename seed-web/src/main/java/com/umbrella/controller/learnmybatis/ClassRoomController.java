@@ -1,13 +1,10 @@
-package com.umbrella.controller.classroom;
+package com.umbrella.controller.learnmybatis;
 
 import com.umbrella.mapper.ClassRoomMapper;
-import com.umbrella.model.ClassRoom;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * <p>
@@ -22,8 +19,12 @@ import java.util.List;
 @RequestMapping("/class")
 public class ClassRoomController {
 
-    @Autowired
     private ClassRoomMapper classRoomMapper;
+
+    @Autowired
+    public ClassRoomController (ClassRoomMapper classRoomMapper) {
+        this.classRoomMapper = classRoomMapper;
+    }
 
     @RequestMapping("/listClassRoom")
     @ResponseBody

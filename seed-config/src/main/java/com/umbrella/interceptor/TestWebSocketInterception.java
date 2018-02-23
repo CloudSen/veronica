@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 /**
- * Websocket测试拦截器
+ * Websocket测试拦截器,Spring WebSocket API
  *
  * @author 011096=>yangyunsen@inner.czy.com
  * @version 1.0

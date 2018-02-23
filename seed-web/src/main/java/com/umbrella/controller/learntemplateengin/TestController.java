@@ -1,4 +1,4 @@
-package com.umbrella.controller.testcontroller;
+package com.umbrella.controller.learntemplateengin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * <p>
- * Description: test controller
+ * Description: learnrequirejs controller
  * </p>
  *
  * @author: 011096=>yangyunsen@inner.czy.com
