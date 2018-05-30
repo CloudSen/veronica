@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * <p>
  * Description: Spring Boot 启动类
+ * @RestController是@ResponseBody和@Controller的组合注解
  * </p>
  *
  * @author: 011096=>yangyunsen@inner.czy.com
