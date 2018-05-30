@@ -26,6 +26,7 @@
         <java.version>1.8</java.version>
         <spring.boot.version>1.5.13.RELEASE</spring.boot.version>
         <spring.boot.devtools>2.0.2.RELEASE</spring.boot.devtools>
+        <spring.boot.redis>2.0.2.RELEASE</spring.boot.redis>
         <mybatis.spring.boot.version>1.3.2</mybatis.spring.boot.version>
         <mysql.connecter.version>5.1.38</mysql.connecter.version>
     </properties>
@@ -83,7 +84,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
-                <version>${spring.boot.version}</version>
+                <version>${spring.boot.redis}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
