@@ -21,10 +21,11 @@ spring:
     username: root
     password: cloudsen
     driver-class-name: com.mysql.jdbc.Driver
-# Spring Security 配置
-security:
-  basic:
-    enabled: false
+  redis:
+    host: 192.168.114.128
+    password: cloudsen
+    database: 0
+    port: 6379
 # Mybatis 配置
 mybatis:
   type-aliases-package: com.umbrella.model
