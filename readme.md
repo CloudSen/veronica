@@ -4,4 +4,4 @@ _____ _____ _____ _____ _____ __    __    _____
 |  |  | | | | __ -|    -|   __|  |__|  |__|     |
 |_____|_|_|_|_____|__|__|_____|_____|_____|__|__|
 ```
-SpringBoot(1.5.13) + Spring Security(1.5.13) + Mybatis + Redis + Vue(2.0) + ElementUI Demo
+SpringBoot(2.0.2) + Spring Data Redis(2.0.7) + Spring Security(2.0.2) + Mybatis + Vue(2.0) + ElementUI Demo
