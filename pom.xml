@@ -25,15 +25,21 @@
 
     <properties>
         <java.version>1.10</java.version>
+        <!-- spring boot core -->
         <spring.boot.version>2.0.3.RELEASE</spring.boot.version>
         <spring.boot.maven.plugin>2.0.3.RELEASE</spring.boot.maven.plugin>
-        <spring.security.boot.version>2.0.2.RELEASE</spring.security.boot.version>
-        <spring.boot.data.redis.version>2.0.7.RELEASE</spring.boot.data.redis.version>
-        <spring.boot.log4j2.version>2.0.0.RELEASE</spring.boot.log4j2.version>
+        <!-- spring boot starters -->
+        <spring.boot.starter.security.version>2.0.3.RELEASE</spring.boot.starter.security.version>
+        <spring.boot.starter.log4j2.version>2.0.0.RELEASE</spring.boot.starter.log4j2.version>
         <spring.boot.test.starter.version>2.0.3.RELEASE</spring.boot.test.starter.version>
+        <mybatis.spring.boot.starter.version>1.3.2</mybatis.spring.boot.starter.version>
+        <!-- spring boot data -->
+        <spring.boot.data.redis.version>2.0.7.RELEASE</spring.boot.data.redis.version>
+        <!-- redis -->
         <redis.client.version>2.9.0</redis.client.version>
-        <mybatis.spring.boot.version>1.3.2</mybatis.spring.boot.version>
+        <!-- mysql driver -->
         <mysql.connecter.version>5.1.38</mysql.connecter.version>
+        <!-- commons -->
         <commons.pool2.version>2.5.0</commons.pool2.version>
     </properties>
 
@@ -49,7 +55,7 @@
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>${mybatis.spring.boot.version}</version>
+                <version>${mybatis.spring.boot.starter.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -66,7 +72,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-security</artifactId>
-                <version>${spring.security.boot.version}</version>
+                <version>${spring.boot.starter.security.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -91,7 +97,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-log4j2</artifactId>
-                <version>${spring.boot.log4j2.version}</version>
+                <version>${spring.boot.starter.log4j2.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
