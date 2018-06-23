@@ -11,6 +11,7 @@ a multi-module maven project.
 #Technology involved
 ## Back-end
 - Spring Boot(2.0.3GA)
+    - Devtools
     - Spring Security Starter
     - Spring Test Starter
     - Log4j Starter
