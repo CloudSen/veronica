@@ -9,8 +9,9 @@ a multi-module maven project.
 #Technology involved
 ## Back-end
 - Spring Boot(2.0.3GA)
+    - Spring Security Starter
+    - 
 - Spring Data Redis(2.0.7)
-- Spring Security(2.0.2)
 - Mybatis
 - Mysql(5.7)
 ## Front-end
