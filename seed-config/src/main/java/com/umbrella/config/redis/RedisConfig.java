@@ -8,7 +8,6 @@ import org.springframework.data.redis.connection.jedis.JedisClientConfiguration;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
-import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 /**
@@ -37,7 +36,7 @@ public class RedisConfig {
     }
 
     /**
-     * 使用Spring-Data-Redis为单节点模式
+     * 使用Spring-Data-Redis为单节点模式,配置Redis服务器基本信息
      */
     @Bean
     public RedisStandaloneConfiguration redisStandaloneConfiguration() {

@@ -1,6 +1,8 @@
 package com.umbrella.service.learnspringdataredis.impl;
 
 import com.umbrella.service.learnspringdataredis.RedisTestService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
@@ -18,6 +20,7 @@ public class RedisTestServiceImpl implements RedisTestService {
 
     private RedisTemplate<String, String> stringRedisTemplate;
     private ValueOperations<String, String> opsForString;
+    private final Logger logger = LoggerFactory.getLogger(RedisTestServiceImpl.class);
 
     @Autowired
     public RedisTestServiceImpl(RedisTemplate<String, String> stringRedisTemplate) {
@@ -27,6 +30,7 @@ public class RedisTestServiceImpl implements RedisTestService {
 
     @Override
     public void add(String key, String value) {
+        logger.info("test");
         this.opsForString.set(key, value);
     }
 

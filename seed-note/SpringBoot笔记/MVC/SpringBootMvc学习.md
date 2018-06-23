@@ -15,7 +15,7 @@
 
 配置mvc有两种方法
 1. 如果想保留MVC的一些默认设置的同时加入自己的配置，
-那么就新建一个类并实现`WebMvcConfigurer`接口，
+那么就新建一个类并实现`WebMvcConfigurer`接口(SpringBoot1.5.x提供了WebMvcConfigurerAdapter)，
 且只使用`@Configuration`注解,不使用`@EnableWebMvc`注解;
 2. 如果想完全控制Spring MVC，则需要同时使用`@Configuration`和`@EnableWebMvc`注解。
 

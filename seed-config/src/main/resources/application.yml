@@ -15,10 +15,10 @@ spring:
     enabled: true
   thymeleaf:
     enabled: false
-  # 数据库配置
+  # mybatis-starter boot配置
   datasource:
-    url: jdbc:mysql://localhost:3306/test
-    username: root
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8
+    username: cloudsen
     password: cloudsen
     driver-class-name: com.mysql.jdbc.Driver
 # Mybatis 配置
