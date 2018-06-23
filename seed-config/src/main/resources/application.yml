@@ -1,27 +1,4 @@
-# 服务器启动端口
-server:
-  port: 7001
-# Spring 配置
 spring:
-  # MVC 配置
-  mvc:
-    # 视图解析器配置
-    view:
-      prefix: /views/
-      suffix: .html
-    static-path-pattern: /**
-  # 模板引擎配置
-  freemarker:
-    enabled: true
-  thymeleaf:
-    enabled: false
-  # mybatis-starter boot配置
-  datasource:
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8
-    username: cloudsen
-    password: cloudsen
-    driver-class-name: com.mysql.jdbc.Driver
-# Mybatis 配置
-mybatis:
-  type-aliases-package: com.umbrella.model
-  mapper-locations: classpath*:/com/umbrella/mapper/*.xml
+  # 生效文件 dev、prd
+  profiles:
+    active: dev
