@@ -1,7 +1,7 @@
 [TOC]
 # SpringBoot 整合Spring-Data-Redis
 > 主要是Jedis的配置，Lettuce 不熟；  
-JedisConnectFactory中的setUsePool()方法已启用，配置连接池通过JedisClientConfiguration；  
+JedisConnectFactory中的setUsePool()方法已弃用，配置连接池通过JedisClientConfiguration；  
 
 ## jar包
 - spring-data-redis 2.0.X

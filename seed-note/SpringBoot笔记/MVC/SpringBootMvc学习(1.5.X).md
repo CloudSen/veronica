@@ -1,4 +1,7 @@
 ## Spring Boot的MVC自动配置
+> version: spring boot 1.5.X
+
+
 > 此部分内容参见：  
 > MVC配置类: seed-config/src/main/java/com/umbrella/config/MvcConfig.java  
 > SpringBoot配置文件: seed-config/src/main/resources/application.properties  

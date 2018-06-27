@@ -1,5 +1,8 @@
 # Spring-Boot-Devtools 介绍与使用
+> version: spring boot 2.0.3GA  
+
 > 参考自：https://howtodoinjava.com/spring/spring-boot2/developer-tools-module-tutorial/  
+https://docs.spring.io/spring-boot/docs/2.0.3.RELEASE/reference/htmlsingle/#using-boot-devtools  
 在application.yml配置文件中能找到开发工具的配置
   
 如果你使用过Node、Angular、Gulp等前端框架，你会发现当你的代码发生变动后，浏览器会自动重载UI(Auto-refresh/Auto-reload)，
