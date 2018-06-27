@@ -12,12 +12,15 @@ a multi-module maven project.
 ## Back-end
 - Spring Boot(2.0.3GA)
     - Devtools
+    - Spring Web Starter
     - Spring Security Starter
     - Spring Test Starter
+    - Freemarker Starter
+    - Websocket Starter
     - Log4j Starter
     - Mybatis Starter
+    - Jedis
 - Spring Data Redis(2.0.7)
-- Mybatis
 - Mysql(5.7)
 ## Front-end
 - ES6
