@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
-    <artifactId>seed-model</artifactId>
+    <artifactId>seed-domain</artifactId>
     <description>实体类模块</description>
 
     <dependencies>

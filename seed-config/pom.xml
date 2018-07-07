@@ -22,7 +22,7 @@
         </dependency>
         <dependency>
             <groupId>com.umbrella</groupId>
-            <artifactId>seed-web</artifactId>
+            <artifactId>seed-controller</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>

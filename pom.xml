@@ -13,12 +13,12 @@
         root POM file, manages other subprojects, contains all of the jar's information we need.
     </description>
     <modules>
-        <module>seed-resource</module>
         <module>seed-web</module>
+        <module>seed-controller</module>
         <module>seed-config</module>
         <module>seed-service</module>
         <module>seed-mapper</module>
-        <module>seed-model</module>
+        <module>seed-domain</module>
         <module>seed-note</module>
         <module>seed-tools</module>
     </modules>
