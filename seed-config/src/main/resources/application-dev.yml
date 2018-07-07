@@ -26,4 +26,4 @@ spring:
 # Mybatis 配置
 mybatis:
   type-aliases-package: com.umbrella.model
-  mapper-locations: classpath*:/com/umbrella/mapper/*.xml
+  mapper-locations: classpath*:/com/umbrella/mapper/**/*.xml
