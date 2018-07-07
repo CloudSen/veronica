@@ -1,6 +1,6 @@
 package com.umbrella.controller.learnmybatis;
 
-import com.umbrella.mapper.ClassRoomMapper;
+import com.umbrella.mapper.classroom.ClassRoomMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

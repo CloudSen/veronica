@@ -1,4 +1,4 @@
-package com.umbrella.mapper;
+package com.umbrella.mapper.classroom;
 
 import com.umbrella.model.ClassRoom;
 import org.apache.ibatis.annotations.Mapper;
